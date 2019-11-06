@@ -1,0 +1,349 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <FrameLayout-->
+<!--            android:id="@android:id/tabcontent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="15dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tab1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/containerFlyingFrom"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:visibility="invisible"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:background="@drawable/bgrounded">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/ic_flight_takeoff_black_24dp"-->
+<!--                        android:paddingTop="15dp"-->
+<!--                        android:visibility="invisible"-->
+<!--                        android:paddingRight="15dp"/>-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/txtOneWayFrom"-->
+<!--                        android:visibility="invisible"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="@string/prompt_flyingfrom"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:fontFamily="sans-serif"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/containerFlyingTo"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:background="@drawable/bgrounded">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/ic_flight_land_black_24dp"-->
+<!--                        android:paddingTop="15dp"-->
+<!--                        android:visibility="invisible"-->
+<!--                        android:paddingRight="15dp"/>-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/txtOneWayTo"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="@string/prompt_flyingto"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:visibility="invisible"-->
+<!--                        android:inputType="text"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:fontFamily="sans-serif"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnOneWayDepartureDatePicker"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:visibility="invisible"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:drawableLeft="@drawable/ic_date_range_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:text="@string/prompt_departure_date"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+<!--                <Button-->
+<!--                    android:id="@+id/btnOneWayNumTraveller"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:visibility="invisible"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:text="1 Traveller"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnOneWayClass"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="invisible"-->
+<!--                    android:drawableLeft="@drawable/ic_airline_seat_recline_extra_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:text="Economy"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tab2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/containerRoundFlyingFrom"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:background="@drawable/bgrounded">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/ic_flight_takeoff_black_24dp"-->
+<!--                        android:paddingTop="15dp"-->
+<!--                        android:paddingRight="15dp"/>-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/txtRoundFrom"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="@string/prompt_flyingfrom"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:fontFamily="sans-serif"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/containerRoundFlyingTo"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:background="@drawable/bgrounded">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/ic_flight_land_black_24dp"-->
+<!--                        android:paddingTop="15dp"-->
+<!--                        android:paddingRight="15dp"/>-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/txtRoundTo"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="@string/prompt_flyingto"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:fontFamily="sans-serif"/>-->
+
+<!--                </LinearLayout>-->
+
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnRoundDepartureDatePicker"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:drawableLeft="@drawable/ic_date_range_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:text="@string/prompt_departure_date"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnRoundReturnDatePicker"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:drawableLeft="@drawable/ic_date_range_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:text="@string/prompt_return_date"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+<!--                <Button-->
+<!--                    android:id="@+id/btnRoundTraveller"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:text="1 Traveller"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnRoundTravellerChild"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:text="0 Child"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnRoundTravellerInfant"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:text="0 Infant"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnRoundClass"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableLeft="@drawable/ic_airline_seat_recline_extra_black_24dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:text="Economy"-->
+<!--                    android:background="@drawable/bgrounded"-->
+<!--                    android:textColor="@color/colorMediumGray"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+
+
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnSearch"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@color/colorPrimary"-->
+<!--                    android:text="Search"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:fontFamily="sans-serif"/>-->
+
+<!--            </LinearLayout>-->
+
+
+
+
+<!--        </FrameLayout>-->
+
+
+
+<!--    </ScrollView>-->
+
+
+
+
+
+
+</LinearLayout>
+
+

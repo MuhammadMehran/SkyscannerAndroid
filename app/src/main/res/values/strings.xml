@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Skyscanner</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="prompt_credit_card">Credit Card</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+
+
+    <string name="prompt_flyingfrom">Flying from</string>
+    <string name="prompt_flyingto">Flying to</string>
+    <string name="prompt_departure_date">Departure date</string>
+    <string name="prompt_return_date">Return date</string>
+    <string name="prompt_traveller">Select Traveller</string>
+    <string name="prompt_class">Select class</string>
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="alert_dialog_two_buttons_title">My Title</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="sort">
+        <item>Fare</item>
+        <item>Travel time</item>
+    </string-array>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="tab_text_1">One Way Flight</string>
+    <string name="tab_text_2">Round Way</string>
+
+
+    <string name="base_url">https://PlanYourFlight.pythonanywhere.com/</string>
+</resources>
